@@ -44,7 +44,7 @@
 
 .parrSection {
   font-family: 'Montserrat';
-  margin-top: 24px;
+  margin-top: 42px;
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
@@ -61,6 +61,18 @@
   margin-top: 40px;
   font-weight: normal;
   font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #073B63;
+}
+
+.pBtnBlue {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  /* or 436% */
+  margin-top: 8px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #073B63;
@@ -100,6 +112,20 @@
   margin: 0 auto;
 }
 
+.btnWhite {
+  background-color: white !important;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 226px;
+  height: 50px;
+  color: #073B63;
+  display: block !important;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
 .title3 {
   font-family: 'Poppins';
   font-style: normal;
@@ -107,8 +133,13 @@
   font-size: 28px;
   line-height: 42px;
   text-align: center;
+  margin-top: 40px;
   letter-spacing: 0.04em;
   color: #116C44;
+}
+
+#Textarea1 {
+  height: 200px;
 }
 
 .linet {
@@ -135,39 +166,43 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.parrNav:hover {
+  border-bottom: 2px green;
+}
+
 .navbar {
   background-color: white;
 }
 
 #servicios, #nosotros, #proyectos {
-  margin-top: 60px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 20px;
+  margin-top: 140px;
+  padding-left: 14%;
+  padding-right: 14%;
+  margin-bottom: 140px;
 }
 
 .card {
-  padding: 24px;
+  padding: 42px;
   flex-direction: inherit !important;
   display: flex;
   justify-content: center;
   width: auto;
-  margin-top: 40px;
-  height: 380px;
-  margin-bottom: 20px;
+  margin-top: 80px;
+  height: 420px;
+  margin-bottom: 80px;
   border: 1px solid grey;
 }
 
 .imgCard {
-  width: 360px;
-  height: 330px;
+  width: 400px;
+  height: auto;
 }
 
 .titCardGreen {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 29px;
+  font-size: 28px;
   line-height: 43px;
   letter-spacing: 0.06em;
   color: #116C44;
@@ -196,9 +231,11 @@
 .btnCard {
   width: 146px;
   border: 0px;
-  padding: 4px;
-  border-radius: 4px;
-  height: 30px;
+  position: absolute;
+  padding: 8px;
+  border-radius: 2px;
+  height: 34px;
+  bottom: 40px;
   background: #116C44;
 }
 
@@ -211,9 +248,10 @@
 
 .footer {
   padding: 60px;
+  padding-top: 120px;
   display: flex;
   justify-content: space-around;
-  height: 400px;
+  height: 540px;
   background-color: #073B63;
 }
 
@@ -228,6 +266,13 @@
 .boxCard {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.imgIcon {
+  width: 38px;
+  height: 38px;
+  margin-right: 14px;
+  cursor: pointer;
 }
 
 .form {
@@ -254,14 +299,16 @@
 .boxGreenLines {
   display: flex;
   margin-top: 60px;
-  margin-bottom: -10px;
+  margin-bottom: -14px;
   justify-content: space-between;
 }
 
 .btnFoo {
   width: 148px;
-  height: 28px;
+  height: 34px;
+  padding: 4px;
   border: 0px;
+  border-radius: 2px;
   background: #116C44;
 }
 
@@ -287,4 +334,60 @@
   width: 38%;
   background-color: #116C44;
   height: 4px;
+}
+
+@media (max-width: 600px) {
+  .title2 {
+    font-size: 36px;
+  }
+
+  .parrSection {
+    font-size: 14px;
+  }
+
+  #servicios, #nosotros, #proyectos {
+    margin-top: 140px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-bottom: 140px;
+  }
+
+  .linet {
+    width: 70%;
+  }
+
+  .title3Blue {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 24px;
+  }
+
+  .footer {
+    display: block;
+    height: auto;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+  }
+
+  .contactContainer {
+    margin-bottom: 40px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .title3 {
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
 }
